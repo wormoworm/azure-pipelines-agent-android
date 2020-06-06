@@ -1,3 +1,5 @@
+RUN ls -al
+
 FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest
 
 ENV ANDROID_SDK_ROOT /var/android-sdk
