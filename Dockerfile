@@ -9,8 +9,9 @@ RUN mkdir /scripts/
 COPY install-android-sdk.sh /scripts/install-android-sdk.sh
 COPY entrypoint.sh /scripts/entrypoint.sh
 
-RUN ls -al
-RUN ls -al /scripts/
+RUN ls /
+
+RUN chmod 755 /scripts/*
 
 RUN /scripts/install-android-sdk.sh
 CMD /scripts/entrypoint.sh
