@@ -1,10 +1,10 @@
-RUN ls -al
-
 FROM mcr.microsoft.com/azure-pipelines/vsts-agent:latest
 
 ENV ANDROID_SDK_ROOT /var/android-sdk
 ENV PATH="/var/android-sdk/tools:${PATH}"
 ENV ANDROID_PLATFORMS="platforms;android-28"
+
+RUN ls -al
 
 RUN mkdir /scripts/
 
